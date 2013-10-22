@@ -1,1 +1,74 @@
-<h1>Hello Android</h1>
+<style>
+body{
+  background: #ccc;
+}
+
+.border{
+   background: 
+    radial-gradient(#fff 7%, #111 10%, transparent 40%),
+    linear-gradient(45deg, #fff 5%, #111 10%, transparent 10%, transparent 90%, #fff 95%);
+  background-color: #111;
+  background-size: 50px 50px;
+  display: inline;
+  float: left;
+  margin: 15px;
+  position: relative;
+  border-width: 20px;
+  width: 160px;
+  height: 160px;
+}
+.border:nth-child(1){
+  border-image: radial-gradient(#fff, #000) 40% repeat;
+}
+
+.border:nth-child(2){
+  border-image: linear-gradient(45deg, #fff, #000) 30% round;
+}
+
+.border:nth-child(3){
+  border-image: radial-gradient(#fff, #000) 20% round;
+}
+
+.border:nth-child(4){
+  border-image: linear-gradient(#fff, #000) 14% stretch;
+}
+
+.border:nth-child(5){
+  border-image: linear-gradient(#000, #fff) 25% round;
+}
+
+.border:nth-child(6){
+  border-image: linear-gradient(45deg, #fff, #000) 70% round;
+}
+
+.border:nth-child(7){
+  border-image: radial-gradient(#fff, #000) 100% stretch stretch;
+}
+
+.border:nth-child(8){
+  border-image: linear-gradient(-45deg, #000, #fff, #000) 100% stretch;
+}
+
+.border:nth-child(9){
+  border-image: radial-gradient(#000 70%, #fff 100%, #fff) 1%;
+}
+
+.border:nth-child(10){
+  border-image: linear-gradient(45deg, #000 50%, #fff 50%, #fff 100%) 15%;
+}
+
+.border:hover{
+  transform: scale(1.1);
+  transition: ease 1.5;
+}
+</style>
+<div class='border'></div>
+<div class='border'></div>
+<div class='border'></div>
+<div class='border'></div>
+<div class='border'></div>
+<div class='border'></div>
+<div class='border'></div>
+<div class='border'></div>
+<div class='border'></div>
+<div class='border'></div>
